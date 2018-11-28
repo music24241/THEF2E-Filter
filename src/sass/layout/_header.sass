@@ -1,0 +1,74 @@
+// body *
+//     border: 1px solid black
+.l-header
+    height: 92px
+    background: $main
+    +mobile
+        height: auto
+    .container
+        height: 100%
+        align-items: center
+        display: flex
+        +mobile
+            display: block
+    &__logo
+        margin-left: 54px
+        +mobile
+            padding: 20px 0px
+            margin-left: 0px
+        a
+            color: #FFFFFF
+            cursor: pointer
+            text-decoration: none
+            opacity: 0.8
+            transition: 0.2s
+            &:hover,&:active
+                opacity: 1
+            +mobile
+                display: block
+                text-align: center
+    &__search
+        margin-left: 149px
+        color: $white
+        position: relative
+        +pad-below
+            margin-left: 103px
+        +mobile
+            width: 100%
+            background: $gallery
+            margin-left: 0px
+            color: $black
+            height: 55px
+            padding: 10.5px 40px
+            padding-top: 14px
+        i
+            font-size: 20px
+            position: absolute
+            left: 0px
+            +mobile
+                left: 41px
+        input
+            padding-left: 40px
+            padding-bottom: 4.5px
+            width: 388px
+            color: $white
+            background: transparent
+            border: none
+            border-bottom: 2px solid $white
+            font-size: 20px
+            +pad-below
+                width: 300px
+                padding-left: 30px
+            +mobile
+                color: $black
+                padding-left: 44px
+                width: 100%
+                border-bottom: 2px solid $black
+            &:focus
+                outline: none
+        ::placeholder
+            color: $white
+            font-style: italic
+            opacity: 0.5
+            +mobile
+                color: $dark

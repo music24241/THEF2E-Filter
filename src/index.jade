@@ -1,0 +1,64 @@
+extends  layout.jade
+block content
+    .p-index
+        .p-index__title 
+            |Showing 
+            span 15 
+            |&nbsp;result by...
+        ul.p-index__tags.h-flex.h-flex-wrap
+            li.h-flex.h-align-items-center 
+                |Koahsiung
+                span
+            li.h-flex.h-align-items-center 
+                |Entertainment
+                span
+        ul.p-index__result
+            li
+                a(href="content.html")
+                    .p-index__result__item.h-flex
+                        .p-index__result__item__img
+                        .p-index__result__item__content
+                            .p-index__result__item__content__title.title Kogi Cosby sweater.
+                            .p-index__result__item__content__paragraph Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.
+                            .h-flex.h-align-items-center(style="margin-top: 16px")
+                                .p-index__result__item__content__author Ethan Foster
+                                .p-index__result__item__content__tag.tag Entertainment
+                            .h-flex.h-align-items-center.group(style="margin-top: 16px")
+                                .p-index__result__item__content__location
+                                    i.fas.fa-map-marker-alt
+                                    span Kaohsiung City
+                                .p-index__result__item__content__date
+                                    i.far.fa-calendar-alt
+                                    span 2018/5/24 - 2018/5/31
+            li
+                a(href="content.html")
+                    .p-index__result__item.h-flex
+                        .p-index__result__item__img
+                        .p-index__result__item__content
+                            .p-index__result__item__content__title.title Kogi Cosby sweater.
+                            .p-index__result__item__content__paragraph Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.
+                            .h-flex.h-align-items-center(style="margin-top: 16px")
+                                .p-index__result__item__content__author Ethan Foster
+                                .p-index__result__item__content__tag.tag Entertainment
+                            .h-flex.h-align-items-center.group(style="margin-top: 16px")
+                                .p-index__result__item__content__location
+                                    i.fas.fa-map-marker-alt
+                                    span Kaohsiung City
+                                .p-index__result__item__content__date
+                                    i.far.fa-calendar-alt
+                                    span 2018/5/24 - 2018/5/31
+        ul.m-pagination.h-flex
+            li.m-pagination__pre 
+                a(href="#") «
+            li 
+                a(href="#") 1
+            li 
+                a(href="#") 2
+            li 
+                a(href="#") 3
+            li 
+                a(href="#") 4
+            li 
+                a(href="#") 5
+            li.m-pagination__next 
+                a(href="#") »

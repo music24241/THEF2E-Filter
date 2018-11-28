@@ -1,0 +1,35 @@
+.l-sidebar
+    .l-sidebar__location.h-flex.h-flex-column
+        .sub-title Location
+            span -
+        .l-sidebar__location_show
+            select#(name="")
+                option(value="Taiwan") Taiwan
+    .l-sidebar__date
+        .sub-title Date
+            span -
+        .l-sidebar__date_show
+            .form-group.h-flex.h-justify-content-between.h-align-items-center
+                label(for="firstDate") from
+                input#firstDate(type="text")
+            .form-group.h-flex.h-justify-content-between.h-align-items-center
+                label(for="lastDate",style="margin-left: 17px") to
+                input#lastDate(type="text")
+    .l-sidebar__categories
+        .sub-title Categories
+            span +
+        .l-sidebar__categories__lists
+            input(type="checkbox" value="All")
+            |All
+            br
+            input(type="checkbox" value="Entertainment") 
+            |Entertainment
+            br
+            input(type="checkbox" value="Food") 
+            |Food
+            br
+            input(type="checkbox" value="Learning") 
+            |Learning
+            br
+            input(type="checkbox" value="Outdoors") 
+            |Outdoors
